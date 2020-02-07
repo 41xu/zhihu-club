@@ -1,0 +1,19 @@
+create database `zhihu`;
+use zhihu;
+create table `category` (
+	`id` varchar(30),
+	`name` varchar(20),
+	`totals` int(11),
+	`time` date,
+	primary key(`id`)
+);
+create table `club` (
+	`category` varchar(30),
+	`id` varchar(30),
+	`name` varchar(20),
+	`description` varchar(200),
+	`created_at` varchar(20),
+	`join_count` int(11),
+	`post_count` int(11),
+	primary key(`id`)
+);
