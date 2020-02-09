@@ -29,3 +29,4 @@ class ClubItem(scrapy.Item):
     join_count=scrapy.Field()
     post_count=scrapy.Field()
     category=scrapy.Field()
+    time=scrapy.Field()

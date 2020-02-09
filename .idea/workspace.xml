@@ -22,29 +22,29 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - zhihu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="xusy" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - zhihu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="xusy" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - zhihu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="xusy" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="zhihu: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - zhihu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="xusy" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="zhihu: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="category: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - zhihu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="xusy" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="zhihu: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="club: table" type="285a2a93:MysqlImplModel$Table" />
@@ -64,7 +64,7 @@
   </component>
   <component name="ProjectId" id="1XTBT90jt9USwUuukZEsP59nbCo" />
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="clickhouse&#10;mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -197,7 +197,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581060208952</updated>
-      <workItem from="1581060211661" duration="22601000" />
+      <workItem from="1581060211661" duration="24884000" />
+      <workItem from="1581174533650" duration="33000" />
+      <workItem from="1581176635388" duration="1545000" />
+      <workItem from="1581210764162" duration="4971000" />
     </task>
     <servers />
   </component>
@@ -209,7 +212,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

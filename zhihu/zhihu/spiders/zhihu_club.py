@@ -59,7 +59,6 @@ class ZhihuClubSpider(scrapy.Spider):
         if temp['is_end'] == False:
             # 还得翻页
             for i in range(totals // page + 1):
-                self.logger.debug("**************************",i,"*************************\n")
                 url = club_url.format(category_id=cate['id'], page=page, offset=i * page)
                 yield Request(url, callback=self.parse_club)
 

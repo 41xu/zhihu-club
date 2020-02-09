@@ -1,19 +1,26 @@
-create database `zhihu`;
+CREATE DATABASE zhihu;
 use zhihu;
 create table `category` (
-	`id` varchar(30),
+	`id` varchar(100),
 	`name` varchar(20),
 	`totals` int(11),
-	`time` date,
+	`time` datetime,
 	primary key(`id`)
 );
 create table `club` (
-	`category` varchar(30),
-	`id` varchar(30),
+	`category` varchar(100),
+	`id` varchar(100),
 	`name` varchar(20),
-	`description` varchar(200),
+	`description` varchar(200) character set utf8mb4,
 	`created_at` varchar(20),
 	`join_count` int(11),
 	`post_count` int(11),
+	`time` datetime,
 	primary key(`id`)
 );
+
+PS：当字符串中含有emoji时插入mysql会报错，解决方案：
+
+服务器上设置的允许远程连接
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '990105Xsy!' WITH GRANT OPTION;
+FLUSH   PRIVILEGES;
