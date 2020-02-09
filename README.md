@@ -4,7 +4,7 @@
 ## 安装
 
 ```
-pip3 install -r requirements.txt
+pip3 install -r requirement.txt
 ```
 
 ## 配置
