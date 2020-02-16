@@ -556,6 +556,6 @@ def login(username, password):
 
 
 if __name__ == '__main__':
-    username = '18439649827'
-    password = 'zhihu123456'
+    username = 'xxx'
+    password = 'xxxx'
     login(username, password)
