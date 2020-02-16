@@ -39,7 +39,7 @@ def get_club_info():
 def category_to_csv():
     data=get_category_info()
     filename='data/category.csv'
-    with open(filename,'x') as f:
+    with open(filename,'x',encoding='utf8') as f:
         write=csv.writer(f,dialect='excel')
         for item in data:
             write.writerow(item)
@@ -48,7 +48,7 @@ def category_to_csv():
 def club_to_csv():
     data=get_club_info()
     filename='data/club.csv'
-    with open(filename,'x') as f:
+    with open(filename,'x',encoding='utf8') as f:
         write=csv.writer(f,dialect='excel')
         for item in data:
             write.writerow(item)

@@ -5,7 +5,7 @@ create table `category` (
 	`name` varchar(20),
 	`totals` int(11),
 	`time` datetime,
-	primary key(`id`)
+	primary key(`id`,`time`)
 );
 create table `club` (
 	`category` varchar(100),
@@ -16,7 +16,7 @@ create table `club` (
 	`join_count` int(11),
 	`post_count` int(11),
 	`time` datetime,
-	primary key(`id`)
+	primary key(`id`,`time`)
 );
 
 PS：当字符串中含有emoji时插入mysql会报错，解决方案：

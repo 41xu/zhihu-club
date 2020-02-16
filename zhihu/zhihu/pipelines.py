@@ -44,6 +44,9 @@ class ZhihuPipeline(object):
             self.cursor.execute(sql,(item['id'],item['name'],item['totals'],date))
             self.db.commit()
         if isinstance(item,ClubItem):
+            item['created_at']=datetime.datetime.fromtimestamp(item['created_at']).strftime("%Y-%m-%d %H:%M:%S")
+            # item['created_at']=datetime.datetime.utcfromtimestamp(item['created_at']).strftime("%Y-%m-%d %H:%M:%S")
+            # 下面的是utc时间戳转datetime
             sql="insert into `club` (`id`, `name`, `category`, `description`, `created_at`, `join_count`, `post_count`,`time`) values (%s,%s,%s,%s,%s,%s,%s,%s)"
             self.cursor.execute(sql,(item['id'],item['name'],item['category'],item['description'],item['created_at'],item['join_count'],item['post_count'],date))
             self.db.commit()
