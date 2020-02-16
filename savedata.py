@@ -4,10 +4,10 @@ import csv
 
 def get_category_info():
     connect = pymysql.connect(
-        host="xxxx",
+        host="114.215.184.150",
         port=3306,
         user='root',
-        password='xxx',
+        password='990105Xsy!',
         db='zhihu',
         charset='utf8mb4'
     )
@@ -21,10 +21,10 @@ def get_category_info():
 
 def get_club_info():
     connect = pymysql.connect(
-        host="xxxx",
+        host="114.215.184.150",
         port=3306,
         user='root',
-        password='xxx',
+        password='990105Xsy!',
         db='zhihu',
         charset='utf8mb4'
     )
